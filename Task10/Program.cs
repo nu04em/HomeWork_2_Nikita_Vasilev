@@ -1,14 +1,14 @@
 ﻿// Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+
 Console.Clear();
+
 Console.Write("Введите трёхзначное число: ");
 int num = int.Parse(Console.ReadLine()!);
 
-int amount = num.ToString().Length;
-
-if (amount > 3 || amount <3)
+while (num < 100 || num > 999)
     {
-        Console.Write("Вы ввели не трехзначное число!");
-        return;
+        Console.Write("Вы ввели не трёхзначное число!\nВведите трёхзначное число: ");
+        num = int.Parse(Console.ReadLine()!);
     }
-else
-    Console.WriteLine((num % 100)/ 10);
+Console.WriteLine($"Второе число: " + (num % 100)/ 10);
+return;

@@ -41,9 +41,9 @@ while (n < 1 || n > 7)
     }
 if (n == 6 || n == 7)
     {
-        Console.WriteLine("Да");
+        Console.WriteLine("Выходной день");
     }
 else
     {
-        Console.WriteLine("Нет");
+        Console.WriteLine("Рабочий день");
     }
